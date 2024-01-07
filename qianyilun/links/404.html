@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Not Found</title>
+    <style>
+        /* 为按钮添加样式 */
+        button {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 2s;
+            /* 添加过渡效果，这里设置为2秒内渐变 */
+        }
+    </style>
+    <script>
+        function changeColor() {
+            var hue = Math.floor(Math.random() * 360); // 随机生成色相值（0-359）
+            document.querySelector('button').style.backgroundColor = 'hsl(' + hue + ', 100%, 50%)'; // 使用HSL颜色模式便于生成连续色彩
+        }
+
+        window.onload = function () {
+            setInterval(changeColor, 2000); // 每隔2秒更改一次颜色
+        };
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</head>
+<body>
+	<!-- Default Statcounter code for qianyilun https://qianyilun.rth1.link/ -->
+	<script type="text/javascript">
+		var sc_project=12816529; 
+		var sc_invisible=1; 
+		var sc_security="40748ca3"; 
+	</script>
+	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript><div class="statcounter"><a title="Web Analytics Made Easy -Statcounter" href="https://statcounter.com/" target="_blank">
+	<img class="statcounter" src="https://c.statcounter.com/12816529/0/40748ca3/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+	<!-- End of Statcounter Code -->
+	<h1>Not Found</h1>
+	<p>The requested URL was not found on this server.</p>
+	<h1><img src="https://s1.ax1x.com/2022/11/13/zFGEoq.jpg" alt="zFGEoq.jpg" border="0" />已阅读钱逸论的人数为</h1><img src="https://s01.flagcounter.com/chart_hourly.cgi?H21A" style="margin-left:20px;">
+	<br>
+	<!-- <h1>人话：钱逸不到啊</h1> -->
+	<h1>人话：只要我不说话，他们就看不见我。</h1>
+	<h4>该域名内的总访问量为
+			<!-- <a href="https://info.flagcounter.com/H21A"></a> -->
+			<img src="https://s01.flagcounter.com/mini/H21A/bg_FFFFFF/txt_000000/border_FFFFFF/flags_0/" alt="Flag Counter" border="0">
+	</h4>
+	<h3>点击这里返回<a href="https://luodiary.github.io/qianyilun/index.html"><font color="blue">电脑版</font></a>
+	或<a href="https://qianyilun.rth1.link/phone.html"><font color="blue">手机版</font></a></h3>
+	<h3>有人想看<a href="https://qianyilun.rth1.link/joke.html"><font color="blue">班级论</font></a>？</h3>
+	<h2>钱逸小朋友的<a href="https://qianyilun.rth1.link/tools.html"><font color="#B3F2FF">工具箱</font></a></h2>
+    <audio id="myAudio" src="voice/a.mp3" preload="auto"></audio>
+
+    <!-- 播放/暂停按钮 -->
+    <button onclick="playAudio()">这是什么？</button>
+    <p>
+			<h2><a href="https://kdocs.cn/l/cjQsL9ZNbaOF"><font color="blue">评论\划水\打卡区</font></a></h2>
+	</p>
+</body>
+</html>
