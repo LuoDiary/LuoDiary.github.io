@@ -24,6 +24,46 @@
         body {
             min-height: 100vh; /* 使用视窗高度单位保证至少填满一屏高度 */
         }
+        /* 菜单栏样式 */
+        .navbar {
+            position: fixed;
+            /* 使菜单栏固定在顶部 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            /* 自定义高度 */
+            background-color: rgba(255, 255, 255, 0.9);
+            /* 为了可读性，设置一个半透明白色背景 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* 可选：添加阴影效果 */
+            z-index: 100;
+            /* 确保菜单栏位于所有内容之上 */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #f1f1f1;
+        }
+
         .overlay {
             position: fixed; /* 或者absolute，根据你的布局需求 */
             top: 0;
@@ -52,7 +92,26 @@
 	<img class="statcounter" src="https://c.statcounter.com/12816529/0/40748ca3/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 	<!-- End of Statcounter Code -->
 	<div class="bg-img"></div>
-	<header>钱逸论&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://kdocs.cn/l/cjQsL9ZNbaOF"><font color="#B3F2FF">评论\划水\打卡区</font></a></header>
+    
+    <!-- 菜单栏 -->
+    <div class="navbar">
+        <ul>
+            <li><a href="https://luodiary.github.io">首页</a></li>
+            <!--
+            <li><a href="#section2">产品</a></li>
+            <li><a href="#section3">服务</a></li>
+            <li><a href="#section4">关于我们</a></li>
+            -->
+            <li><a href="links\tools.html">工具箱</a></li>
+        </ul>
+    </div>
+
+    <!-- 页面内容 -->
+    <div style="padding-top: 60px;">
+        <!-- 为避免菜单栏遮挡内容，增加顶部内边距 -->
+        <!-- ...你的网页内容... -->
+    </div>
+    
 	<main>
 		<p>
 			<h1>钱逸论</h1>
