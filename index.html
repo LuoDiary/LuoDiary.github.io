@@ -2,16 +2,49 @@
 <html lang="zh-CN">
 <!-- be made by Zhang Tao -->
 <head>
+    <style>
+        body {
+            background-image: url("https://s11.ax1x.com/2024/01/07/pFSQTiV.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;/* 关键属性，使背景图片固定 */
+            height: 100%; /* 确保body高度填充整个视窗 */
+            margin: 0; /* 清除默认的margin值 */
+            padding: 0; /* 可选：清除默认的padding值，避免内容区域有空白 */
+        }
+        
+        /* 为了让整个页面从顶部到底部完全填充 */
+        html {
+            height: 100%;
+            overflow-x: hidden; /* 防止水平滚动条出现 */
+        }
+        
+        /* 如果你的网页内容不满一屏，也可以考虑给body添加一个最小高度 */
+        body {
+            min-height: 100vh; /* 使用视窗高度单位保证至少填满一屏高度 */
+        }
+        .overlay {
+            position: fixed; /* 或者absolute，根据你的布局需求 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* 这里0.5是透明度，取值范围0-1，0表示完全透明，1表示完全不透明 */
+            z-index: -1; /* 确保这个div在所有内容之下 */
+        }
+    </style>
 	<meta charset="utf-8">
 	<title>钱逸论</title>
 	<link rel="stylesheet" href="template">
 	<link rel="shortcut icon" href="https://s1.ax1x.com/2022/11/12/zPIkPP.jpg">
 </head>
+<div class="overlay"></div>
 <body>
 	<!-- Default Statcounter code for qianyilun https://qianyilun.rth1.link/ -->
 	<script type="text/javascript">
 		var sc_project=12816529; 
-		var sc_invisible=1; 
+		var sc_invisible=1;
 		var sc_security="40748ca3"; 
 	</script>
 	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
